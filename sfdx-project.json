@@ -3,10 +3,22 @@
     {
       "path": "force-app",
       "default": true
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "./force-app",
+      "default": false,
+      "package": "flyout-menu",
+      "versionDescription": "Component similar to the salesforce picklist component, but with a flyout interface"
     }
   ],
   "name": "flyout-menu",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "62.0"
+  "sourceApiVersion": "62.0",
+  "packageAliases": {
+    "flyout-menu": "0HoDn000000XZxvKAG",
+    "flyout-menu-current": "04tDn000000nHGHIA2"
+  }
 }
