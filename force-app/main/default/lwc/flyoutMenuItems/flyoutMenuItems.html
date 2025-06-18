@@ -1,0 +1,23 @@
+<template>
+  <div
+    lwc:if={shouldRender}
+    id="listbox-id-2"
+    class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid items-container"
+    role="listbox"
+    tabindex="0"
+    aria-busy="false"
+  >
+    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+      <template for:each={data} for:item="item">
+        <c-flyout-menu-item
+          onselect={handleSelect}
+          key={item.value}
+          label={item.label}
+          selectable={item.selectable}
+          value={item.value}
+          children={item._children}
+        ></c-flyout-menu-item>
+      </template>
+    </ul>
+  </div>
+</template>

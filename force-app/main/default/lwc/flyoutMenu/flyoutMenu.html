@@ -1,0 +1,55 @@
+<template>
+  <div class="slds-form-element">
+    <label
+      lwc:if={label}
+      class="slds-form-element__label"
+      for="combobox-id-2"
+      id="combobox-label-id-32"
+      >{label}</label
+    >
+    <div class="slds-form-element__control">
+      <div
+        class="slds-combobox_container slds-size_small slds-is-relative picklist-height"
+      >
+        <div
+          class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open cursor-pointer slds-is-absolute full-width"
+          onclick={handleClick}
+        >
+          <div
+            class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+            role="none"
+          >
+            <div
+              role="combobox"
+              tabindex="0"
+              class="slds-input_faux slds-combobox__input slds-has-focus"
+              aria-labelledby="combobox-label-id-32"
+              id="combobox-id-2-selected-value"
+              aria-controls="listbox-id-2"
+              aria-expanded="true"
+              aria-haspopup="listbox"
+            >
+              <span class="slds-truncate" id="combobox-value-id-36"
+                >{placeholder}</span
+              >
+            </div>
+            <span
+              class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+            >
+              <lightning-icon
+                icon-name="utility:down"
+                size="xx-small"
+              ></lightning-icon>
+            </span>
+          </div>
+          <template lwc:if={focused}>
+            <c-flyout-menu-items
+              data={data}
+              onselect={handleSelect}
+            ></c-flyout-menu-items>
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

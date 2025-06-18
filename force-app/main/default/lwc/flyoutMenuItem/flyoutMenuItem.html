@@ -1,0 +1,33 @@
+<template>
+  <li
+    role="presentation"
+    class="slds-listbox__item"
+    onmouseenter={handleMouseEnter}
+    onmouseleave={handleMouseLeave}
+    onclick={handleClick}
+  >
+    <div
+      id="option85"
+      class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+      role="option"
+    >
+      <span class="slds-media__figure slds-listbox__option-icon"></span>
+      <span class="slds-media__body">
+        <span class="slds-truncate" title={label}>{label}</span>
+      </span>
+      <lightning-icon
+        lwc:if={children.length}
+        icon-name="utility:chevronright"
+        size="x-small"
+      ></lightning-icon>
+    </div>
+    <div class="children">
+      <c-flyout-menu-items
+        onmouseenter={handleMouseEnterChildren}
+        data={childrenToRender}
+        onmouseleave={handleMouseLeave}
+        onselect={handleSelect}
+      ></c-flyout-menu-items>
+    </div>
+  </li>
+</template>
