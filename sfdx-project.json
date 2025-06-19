@@ -19,6 +19,7 @@
   "sourceApiVersion": "62.0",
   "packageAliases": {
     "flyout-menu": "0HoDn000000XZxvKAG",
-    "flyout-menu-current": "04tDn000000nHGHIA2"
+    "flyout-menu-current": "04tDn000000nHGHIA2",
+    "flyout-menu@0.1.0-2": "04tDn000000nHGMIA2"
   }
 }
