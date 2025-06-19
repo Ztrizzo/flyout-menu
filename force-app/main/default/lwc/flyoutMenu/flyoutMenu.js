@@ -25,6 +25,7 @@ export default class FlyoutMenu extends LightningElement {
 
   connectedCallback() {
     if (!this.data) {
+      this.placeholder = "This is sample data...";
       this.data = DATA_BASIC;
     }
   }

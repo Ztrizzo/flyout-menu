@@ -2,3 +2,7 @@
   overflow: visible;
   position: relative;
 }
+
+div.slds-dropdown.items-container {
+  max-height: none;
+}
