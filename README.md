@@ -76,4 +76,4 @@ This repo contains a shell script for installing via the SF CLI
 [Install Script](install-package.sh)
 
 Link to install via UI
-[Install Package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDn000000nHGHIA2)
+[Install Package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDn000000nHGMIA2)
